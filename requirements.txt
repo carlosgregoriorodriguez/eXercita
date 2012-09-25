@@ -1,13 +1,13 @@
 # Main packages
 
-Django
+Django==1.3.2
 
 
 # Template Extras
 
 Jinja2==2.5.5
 Djinja
-pyjade
+pyjade==0.6.1
 
 
 # Utilities
@@ -31,4 +31,4 @@ PIL
 
 # LDAP auth
 
-python-ldap
+# python-ldap
