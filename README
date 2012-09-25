@@ -1,21 +1,17 @@
-apt-get intall python-pip
+Instala las dependencias elementales
+# apt-get install python-pip python-setuptools python-pip python-dev build-essential python-mysqldb mysql-server libmysqlclient15-dev
 
-pip install virtualenv
-virtualenv env
-source env/bin/activate
+# pip install virtualenv virtualenvwrapper
+$ mkvirtualenv exercita --system-site-packages
+$ pip install -r requirements.txt
 
-pip install -r requirements.txt
+Hay que editar el archivo de configuracion y poner el user y contraseña del usuario mysql (user:exercita, pass:)
 
+Ejecutar $ mysql
 
-apt-get install python-setuptools python-pip python-dev build-essential
-pip install mysql-python 
-
-MySQL
-
-create database exercita;
-grant all on exercita.* to exercita@localhost;
-
-
+    CREATE USER exercita;
+    create database exercita;
+    grant all on exercita.* to exercita@localhost;
 
 
 python manage.py syncdb
@@ -24,7 +20,12 @@ python manage.py generatemedia
 
 python manage.py rebuild_index
 
+
+Esto solo es para integrarlo con apache
+
 apt-get install libapache2-mod-wsgi
 a2enmod wsgi
+
+Para instalar el sistema de busqueda
 
 http://www.elasticsearch.org/tutorials/2010/07/02/setting-up-elasticsearch-on-debian.html
