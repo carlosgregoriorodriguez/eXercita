@@ -20,6 +20,8 @@ python manage.py generatemedia
 
 python manage.py rebuild_index
 
+Para ejecutar el servidor en modo de pruebas ejecutar
+$ python manage.py runserver
 
 Esto solo es para integrarlo con apache
 
