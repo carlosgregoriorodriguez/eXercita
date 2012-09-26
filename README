@@ -14,11 +14,11 @@ Ejecutar $ mysql
     grant all on exercita.* to exercita@localhost;
 
 
-python manage.py syncdb
-python manage.py generatemedia
+$python manage.py syncdb
+$python manage.py generatemedia
 
 
-python manage.py rebuild_index
+$python manage.py rebuild_index
 
 Para ejecutar (modo de pruebas) el servidor en stand alone
 
@@ -27,8 +27,8 @@ $python manage.py runserver
 
 Para integrarlo con apache
 
-apt-get install libapache2-mod-wsgi
-a2enmod wsgi
+#apt-get install libapache2-mod-wsgi
+#a2enmod wsgi
 
 Para instalar el sistema de busqueda
 
