@@ -20,10 +20,12 @@ python manage.py generatemedia
 
 python manage.py rebuild_index
 
-Para ejecutar el servidor en modo de pruebas ejecutar
-$ python manage.py runserver
+Para ejecutar (modo de pruebas) el servidor en stand alone
 
-Esto solo es para integrarlo con apache
+$workon exercita (entorno virtual)
+$python manage.py runserver
+
+Para integrarlo con apache
 
 apt-get install libapache2-mod-wsgi
 a2enmod wsgi
